@@ -1,5 +1,6 @@
 @import url(card.css);
 @import url(nav.css);
+@import url(author.css);
 
 .container {
   /* Screen size: mobile (<500) */
@@ -33,6 +34,7 @@
 .footer {
   grid-area: ft;
   margin: 0.5em;
+  margin-top: 100px;
 }
 
 .sidebar {
