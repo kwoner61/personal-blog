@@ -3,15 +3,17 @@
   display: flex;
   margin-bottom: 4em;
   padding: 0.5em;
-  background-color: blue;
 }
 
 .nav a {
   color: black;
   text-decoration: none;
+  display: contents;
 }
 
 .nav-content {
   flex: 0 25%;
   background-color: red;
+  text-align: center;
+  padding-top: 1.5em;
 }

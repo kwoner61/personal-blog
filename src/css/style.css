@@ -1,6 +1,7 @@
 @import url(card.css);
 @import url(nav.css);
-@import url(author.css);
+@import url(post.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
 
 .container {
   /* Screen size: mobile (<500) */
@@ -12,17 +13,9 @@
     "nav"
     "main"
     "ft";
-  /* border: 2px solid yellow; */
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
-}
-
-.card-container {
-  grid-area: main;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 1em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -33,19 +26,26 @@
 
 .header h1 {
   color: white;
-	font-size: 40px;
-	text-shadow: -1px 1px 0 #000,
-				  1px 1px 0 #000,
-				 1px -1px 0 #000;
-				-1px -1px 0 #000;
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: 
+    -1px 1px 0 #000,
+		1px 1px 0 #000,
+		1px -1px 0 #000,
+		-1px -1px 0 #000;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .header .black {
   color: black;
-  text-shadow: -1px 1px 0 white,
-				  1px 1px 0 white,
-				 1px -1px 0 white;
-				-1px -1px 0 white;
+  text-shadow: 
+    -1px 1px 0 white,
+		1px 1px 0 white,
+		1px -1px 0 white,
+		-1px -1px 0 white;
 }
 
 .footer {
@@ -54,6 +54,16 @@
   margin-top: 100px;
 }
 
-.sidebar {
-  grid-area: sd;
+.footer p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 2em;
+  display: inline;
+}
+
+.footer > .github-link {
+  text-align: center;
 }
